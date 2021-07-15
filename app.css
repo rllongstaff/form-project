@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+body {
+    background-color: #0FA3B1;
+}
+
+header, main, footer {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #EDDEA4;
+}
+
+h2 {
+    color: #0FA3B1;
+}
+
+label {
+    color: #B5E2FA;
+}
+
+main {
+    background-color: #F9F7F3;
+}
+
+footer {
+    background-color: #F7A072;
+}
