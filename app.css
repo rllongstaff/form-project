@@ -8,6 +8,8 @@
 
 body {
     background-color: #0FA3B1;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 header, main, footer {
@@ -16,7 +18,11 @@ header, main, footer {
 }
 
 header {
-    background-color: #EDDEA4;
+    background-color: #EDDEA4;   
+}
+
+h1 {
+    font-family: 'Lora', serif; 
 }
 
 h2 {
