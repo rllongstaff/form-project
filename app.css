@@ -20,7 +20,7 @@ body {
 header, main, footer {
     max-width: 980px;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px;
 }
 
 header {
@@ -62,10 +62,29 @@ h2 {
     margin: 40px 0;
 }
 
+.radio-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.radio-element {
+    align-items: baseline;
+}
+
+.terms-element {
+    flex-direction: row;
+    align-items: baseline;
+}
+
 label {
     color: #B5E2FA;
     margin-bottom: 10px;
     font-size: 1.1em;
+}
+
+.radio-label {
+    margin-right: 10px;
 }
 
 input[type="text"], input[type="email"], input[type="password"], input[type="colour"], select, textarea {
@@ -74,10 +93,24 @@ input[type="text"], input[type="email"], input[type="password"], input[type="col
     font-size: 1em;
 }
 
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 button {
+    background-color: #F7A072;
+    border: 2px solid #f47a3a;
+    color: #F9F7F3;
     width: 100%;
     padding: 15px 5px;
     font-size: 1em;
+    cursor: pointer;
+    
+}
+
+button:hover, button:focus {
+    background-color: #fac5a9;
+    transition: background-color 0.5s;
 }
 
 .search-button {
@@ -89,10 +122,10 @@ main {
 }
 
 footer {
-    background-color: #F7A072;
+    background-color: #dfd4bf;
     color: #F9F7F3;
     text-align: center;
-    text-shadow: 1px 2px 1px rgba(156, 60, 9, 1);
+    text-shadow: 1px 1px 1px rgba(67, 35, 3, 1);
 }
 
 @media (min-width: 425px) {
@@ -105,13 +138,22 @@ footer {
     }
 
     .search-button {
-        margin: 0;
+        margin: 0 0 0 10px;
     }
 
     .form-element {
         margin: 25px 0;
         flex-direction: row;
         align-items: center;
+    }
+
+    .radio-elements {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .radio-element {
+        display: flex;
     }
 
     label {
