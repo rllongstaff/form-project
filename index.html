@@ -66,13 +66,19 @@
           <label for="colour">Enter your favourite colour:</label>
           <input type="colour" paceholder="Colour" id="colour" name="colour" required>
         </div>
-        <div class="form-element">
-          <label for="huey" class="radio-label">Huey</label>
-          <input type="radio" name="drone" id="huey" value="huey">
-          <label for="dewey" class="radio-label">Dewey</label>
-          <input type="radio" name="drone" id="dewey" value="dewey">
-          <label for="louie" class="radio-label">Louie</label>
-          <input type="radio" name="drone" id="louie" value="louie">
+        <div class="form-element radio-elements">
+          <div class="radio-element">
+            <label for="huey" class="radio-label">Huey</label>
+            <input type="radio" name="drone" id="huey" value="huey">
+          </div>
+          <div class="radio-element">
+            <label for="dewey" class="radio-label">Dewey</label>
+            <input type="radio" name="drone" id="dewey" value="dewey">
+          </div>
+          <div class="radio-element">
+            <label for="louie" class="radio-label">Louie</label>
+            <input type="radio" name="drone" id="louie" value="louie">
+          </div>
         </div>
         <div class="form-element">
           <label for="purpose">Select a purpose for your drone:</label>
@@ -88,7 +94,7 @@
           <label for="message">Enter a personal drone message:</label>
           <textarea name="message" id="message" cols="40" rows="5" placeholder="Personal message here"></textarea>
         </div>
-        <div class="form-element">
+        <div class="form-element terms-element">
           <input type="checkbox" name="agree_terms" id="agree_terms">
           <label for="agree_terms">I agree to terms</label>
         </div>
