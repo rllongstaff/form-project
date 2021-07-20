@@ -20,22 +20,68 @@ body {
 header, main, footer {
     max-width: 980px;
     margin: 0 auto;
+    padding: 20px 40px;
 }
 
 header {
     background-color: #EDDEA4;   
 }
 
+header p {
+    margin-bottom: 5px;
+    color: #642606;
+}
+
 h1 {
     font-family: 'Lora', serif; 
+    text-align: center;
+    color: #F9F7F3;
+    font-weight: 700;
+    font-size: 3em;
+    text-shadow: 1px 2px 1px rgba(156, 60, 9, 1);
+    margin-bottom: 30px;
+}
+
+ul {
+    margin: 10px 0 10px 40px;
+    color: #642606;
+}
+
+.form-container {
+    margin-bottom: 60px;
 }
 
 h2 {
     color: #0FA3B1;
+    text-align: center;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
 }
 
 label {
     color: #B5E2FA;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="colour"], select, textarea {
+    padding: 15px 5px;
+    width: 100%;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 15px 5px;
+    font-size: 1em;
+}
+
+.search-button {
+    margin-top: 30px;
 }
 
 main {
@@ -44,4 +90,51 @@ main {
 
 footer {
     background-color: #F7A072;
+    color: #F9F7F3;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(156, 60, 9, 1);
+}
+
+@media (min-width: 425px) {
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .search-button {
+        margin: 0;
+    }
+
+    .form-element {
+        margin: 25px 0;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    label {
+        width: 300px;
+    }
+
+    .radio-label {
+        width: 70px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="colour"], select, textarea {
+        width: 300px;
+        padding: 10px 5px;
+        font-size: 0.9em;
+    }
+
+    input[type="radio"] {
+        margin-right: 20px;
+    }
+
+    button {
+        width: 100px;
+        padding: 10px 5px;
+        font-size: 0.9em;
+    }
 }
